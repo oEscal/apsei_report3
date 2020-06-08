@@ -1,0 +1,121 @@
+{UTF-8}
+customer Acquisition Rate=
+	10
+	~	person/Month [0,100]
+	~		|
+
+Customers= INTEG (
+	customer Acquisition Rate,
+		0)
+	~	person
+	~		|
+
+Hardware Sales=
+	customer Acquisition Rate*Hardware sales per new customer
+	~	$/Month
+	~		|
+
+Hardware sales per new customer=
+	1000
+	~	$/person
+	~		|
+
+Hardware share of sales=
+	Hardware Sales/(Hardware Sales+Service Sales)
+	~	Dmnl
+	~		|
+
+Service Sales=
+	Customers*Service sales per existing customer
+	~	$/Month
+	~		|
+
+Service sales per existing customer=
+	100
+	~	$/person/Month
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 120
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.25
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Customers,1062,442,40,20,3,3,0,0,0,0,0,0,0,0,0,0,0,0
+12,2,48,586,450,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,4,6,1,4,0,0,22,0,0,0,-1--1--1,,1|(764,442)|
+1,5,6,2,100,0,0,22,0,0,0,-1--1--1,,1|(764,450)|
+11,6,0,764,464,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,customer Acquisition Rate,764,489,56,17,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,8,0,1401,389,150,150,3,44,0,0,2,0,0,0,0,0,0,0,0,0
+Customers,Graph
+10,9,Hardware Sales,620,284,52,10,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,10,Service Sales,933,280,44,10,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,11,6,9,1,0,0,0,0,64,0,-1--1--1,,1|(669,375)|
+1,12,1,10,1,0,0,0,0,64,0,-1--1--1,,1|(1029,349)|
+10,13,Hardware sales per new customer,412,174,64,17,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+10,14,Service sales per existing customer,1139,134,58,17,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,15,13,9,0,0,0,0,0,64,0,-1--1--1,,1|(516,229)|
+1,16,14,10,0,0,0,0,0,64,0,-1--1--1,,1|(1037,206)|
+10,17,Hardware share of sales,766,177,53,17,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,18,9,17,0,0,0,0,0,64,0,-1--1--1,,1|(681,238)|
+1,19,10,17,0,0,0,0,0,64,0,-1--1--1,,1|(860,235)|
+///---\\\
+:L<%^E!@
+1:Hardware Share
+1:Test
+1:Base case
+9:Hardware Share
+23:0
+15:0,0,0,0,0,0
+19:100,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+4:Time
+5:Service Sales
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+76:0
+77:0
+78:0
+79:0
+80:0
+81:0
+24:0
+25:120
+26:120
+75:
+43:
