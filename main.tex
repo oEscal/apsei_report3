@@ -1,0 +1,139 @@
+\documentclass{article}
+
+% Margin definition.
+\usepackage[a4paper,total={6.8in, 8.5in}]{geometry}
+\usepackage{parskip}
+\usepackage[bottom]{footmisc}
+% Images.
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{float}
+% Table
+\usepackage{array}
+\usepackage[toc,page]{appendix}
+% Links.
+\usepackage[T1,hyphens]{url}
+\usepackage[hidelinks, bookmarks=true]{hyperref}
+% Encoding.
+\usepackage[utf8]{inputenc}
+% Helvetic font.
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+% Header for ua logo.
+\usepackage{fancyhdr}
+% Dots in index.
+\usepackage[titles]{tocloft}
+\renewcommand{\cftsubsubsecleader}{\Large\cftdotfill{0}}
+\renewcommand{\cftsubsecleader}{\Large\cftdotfill{0}}
+\renewcommand{\cftsecleader}{\Large\cftdotfill{0}}
+\renewcommand{\cftsecfont}{\large\bfseries\scshape}
+\renewcommand{\cftsubsecfont}{\scshape}
+\renewcommand{\cftsubsubsecfont}{\small\scshape}
+\addtolength{\cftsecnumwidth}{5pt}
+\renewcommand*{\HyperDestNameFilter}[1]{\jobname-#1}
+% Dot after number in (sub)sections and in toc.
+\renewcommand{\cftsecaftersnum}{.}
+\renewcommand{\cftsubsecaftersnum}{}
+\usepackage[letterspace=45]{microtype}
+\newcommand*{\fullref}[1]{\hyperref[{#1}]{\autoref*{#1} \nameref*{#1} \urlref*{#1}}}
+% Header with ua logo definition. 
+\pagestyle{fancy}
+\fancyhf{}
+\chead{
+    \includegraphics[height=0.5in]{./img/header_ua.png}
+}
+\setlength\headheight{45pt}
+% Footer with page number.
+\rfoot{Página \thepage}
+\renewcommand{\footrulewidth}{0.4pt}
+% Rename table of contents title to "Index"
+\renewcommand{\contentsname}{\normalsize Indice \vspace{0.6cm}}
+
+% for code
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+
+% for the references
+\usepackage[nottoc,numbib]{tocbibind}
+
+% section on new page, except the index one
+\usepackage{etoolbox}
+\pretocmd{\section}{%
+  \ifnum\value{section}=0 \else\clearpage\fi
+}{}{}
+
+
+%encoding
+%--------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%--------------------------------------
+
+%Portuguese-specific commands
+%--------------------------------------
+\usepackage[portuguese]{babel}
+%--------------------------------------
+
+%Hyphenation rules
+%--------------------------------------
+\usepackage{hyphenat}
+\hyphenation{mate-mática recu-perar}
+%--------------------------------------
+
+\begin{document}
+
+\title{\vspace{-0.9cm}
+       \large\raggedright\textbf{} \\ 
+       \vspace{0.5cm}
+       \normalsize
+       \raggedright\textbf{Titulo: \hspace{1.1cm} Evolução do número de utilizadores do Signal em relação à concorrência} \\ \vspace{0.4cm}
+       \raggedright\textbf{Autor: \hspace{1.13cm} Pedro Miguel Nicolau Escaleira} \\ \vspace{0.4cm}
+       \raggedright\textbf{Date: \hspace{1.3cm} 12/06/2020} \\}
+\author{}
+\date{}
+
+\maketitle
+\thispagestyle{fancy}
+
+\vspace{-1.4cm}
+
+\tableofcontents
+
+\newpage
+
+\fontsize{10pt}{13pt}
+\selectfont
+\lsstyle
+
+\input{sections/introduction.tex}
+\input{sections/appendix.tex}
+
+
+\end{document}
