@@ -36,7 +36,7 @@ Ao contrário da \textit{Signal Foundation}, o \textit{Facebook} é mais aberto 
 
 \begin{figure}[H]
    \begin{center}
-       \includegraphics[width=17cm]{img/statistic_id260819_number-of-monthly-active-whatsapp-users-as-of-2013-2020}
+       \includegraphics[width=15cm]{img/statistic_id260819_number-of-monthly-active-whatsapp-users-as-of-2013-2020}
        \caption{Número de utilizadores mensais do \textit{WhatsApp} entre abril de 2013 e março de 2020. \cite{whatsapp_monthly_users}}
        \label{graph:whatsapp_monthly_active}
    \end{center}
@@ -57,7 +57,7 @@ Tal como no \textit{WhatsApp}, os dados de utilização geral do \textit{Faceboo
 
 \begin{figure}[H]
    \begin{center}
-       \includegraphics[width=17cm]{img/statistic_id417295_facebook-messenger_-number-of-monthly-active-users-2014-2017.png}
+       \includegraphics[width=15cm]{img/statistic_id417295_facebook-messenger_-number-of-monthly-active-users-2014-2017.png}
        \caption{Número de utilizadores mensais do \textit{Facebook Messenger} entre abril de 2014 e setembro de 2017. \cite{messenger_monthly_users}}
        \label{graph:messenger_monthly_active}
    \end{center}
@@ -73,7 +73,7 @@ Já quanto ao número de \textit{downloads} feitos no \textit{Google Play}, obti
 
 \subsection{Comparação}
 Como já foi explicado, o \textit{Signal} não publica quaisquer dados de utilização dos seus utilizadores, o que torna difícil fazer comparação com outras aplicações do mesmo tipo. Contudo, há empresas que se "dedicam" a recolher esse tipo de dados de outras formas, como é o caso da \textit{SimilarWeb}, que obtém grande parte dos dados que disponibiliza aos seus utilizadores através de parcerias com operadores de \textit{internet} (explicação mais detalhada de como isso é feito em \cite{first_report}) por exemplo. \cite{similar_web_methodology}
-Desta forma, na figura \ref{graph:all_monthly_active} é apresentado um gráfico do número de utilizadores ativos em cada uma das três aplicações analisadas nos Estados Unidos da América, em ambiente Android (aplicações obtidas no \textit{Google Play}).
+Desta forma, na figura \ref{graph:all_monthly_active} é apresentado um gráfico do número de utilizadores ativos em cada uma das três aplicações analisadas nos Estados Unidos da América, em ambiente \textit{Android} (aplicações obtidas no \textit{Google Play}).
 
 \begin{figure}[H]
    \begin{center}
@@ -83,4 +83,24 @@ Desta forma, na figura \ref{graph:all_monthly_active} é apresentado um gráfico
    \end{center}
 \end{figure}
 
-% meter gráficos de downloads (fazer em matlab ou smth)
+Como é percetível deste gráfico, nos Estados Unidos da América, a utilização do \textit{Signal} é muito mais reduzida que a utilização de qualquer uma das outras duas aplicações.
+
+A mesma conclusão pode ser retirada quando analisados os números de \textit{downloads} que cada uma das aplicações possui no \textit{Google Play}, como é demonstrado no gráfico da figura \ref{graph:downloads_all_time}, sendo que o \textit{WhatsApp} é a aplicação que possui mais, o \textit{Facebook Messenger} tem práticamente o mesmo número que o \textit{WhatsApp}, e o \textit{Signal} tem ligeiramente 200 vezes menos \textit{downloads} que as outras duas.
+
+\begin{figure}[H]
+   \begin{center}
+       \includegraphics[width=15cm]{img/all_downloads.png}
+       \caption{Número de \textit{downloads} feitos no \textit{Google Play} das aplicações \textit{Signal}, \textit{WhatsApp} e \textit{Facebook Messenger}. Dados obtidos em \cite{signal_android}, \cite{whatsapp_downloads_android} e \cite{messenger_downloads_android} e organizados gráficamente em \textit{MATLAB}.}
+       \label{graph:downloads_all_time}
+   \end{center}
+\end{figure}
+
+Analisando-se o número de \textit{downloads} médios de cada uma das aplicações no \textit{Google Play}, apresentados no gráfico da figura \ref{graph:downloads_daily}, pode-se constatar que esta diferença pode apresentar algumas mudanças no futuro, já que o número de \textit{downloads} do \textit{Signal} é 117 vezes inferior ao número de \textit{downloads} diários do \textit{WhatsApp} e 70 vezes inferior ao número de \textit{downloads} diários do \textit{Facebook Messenger} (números muito menores que 200).
+
+\begin{figure}[H]
+   \begin{center}
+       \includegraphics[width=15cm]{img/daily_downloads.png}
+       \caption{Número de \textit{downloads} diários feitos no \textit{Google Play} das aplicações \textit{Signal}, \textit{WhatsApp} e \textit{Facebook Messenger}. Dados obtidos em \cite{signal_android}, \cite{whatsapp_downloads_android} e \cite{messenger_downloads_android} e organizados gráficamente em \textit{MATLAB}.}
+       \label{graph:downloads_daily}
+   \end{center}
+\end{figure}
