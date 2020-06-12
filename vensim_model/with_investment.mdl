@@ -209,10 +209,10 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,9
 1,67,61,21,1,0,0,0,0,64,0,-1--1--1,,1|(1853,442)|
 ///---\\\
 :L<%^E!@
-1:With investment.vdfx
-1:First investment.vdfx
-1:Simple number of users.vdfx
-1:Base.vdfx
+1:With investment
+1:First investment
+1:Simple number of users
+1:Base
 9:With investment
 23:0
 15:0,0,0,0,0,0
@@ -223,7 +223,7 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,9
 72:0
 73:0
 4:Time
-5:Facebook Messenger new downloads rate
+5:WhatsApp active users
 35:Date
 36:YYYY-MM-DD
 37:2000
