@@ -1,0 +1,5 @@
+signal new users rate = 646740 (21558*30)
+whatsapp new users rate = 75801990 (2526733*30)
+messenger new users rate = 45632250 (1521075*30)
+
+(isto está para downloads, se calhar é melhor meter isto para users ativos)

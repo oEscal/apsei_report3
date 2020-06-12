@@ -1,0 +1,136 @@
+{UTF-8}
+Facebook Messenger active users=
+	0.28*Facebook Messenger Downloads
+	~	
+	~		|
+
+Facebook Messenger Downloads= INTEG (
+	Facebook Messenger new downloads rate,
+		4.52277e+09)
+	~	people
+	~		|
+
+Facebook Messenger new downloads rate=
+	4.56322e+07
+	~	people/Month
+	~		|
+
+Signal active users=
+	0.28*Signal Downloads
+	~	
+	~		|
+
+Signal Downloads= INTEG (
+	Signal new downloads rate,
+		2.01246e+07)
+	~	people
+	~		|
+
+Signal new downloads rate=
+	646740
+	~	people/Month
+	~		|
+
+WhatsApp active users=
+	0.28*WhatsApp Downloads
+	~	
+	~		|
+
+WhatsApp Downloads= INTEG (
+	WhatsApp new downloads rate,
+		5.33992e+09)
+	~	people
+	~		|
+
+WhatsApp new downloads rate=
+	7.5802e+07
+	~	people/Month
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 120
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Signal Downloads,441,319,66,23,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,2,WhatsApp Downloads,930,326,86,20,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,3,Facebook Messenger Downloads,1563,332,114,23,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+12,4,48,100,311,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,6,8,1,4,0,0,22,0,0,0,-1--1--1,,1|(311,311)|
+1,7,8,4,100,0,0,22,0,0,0,-1--1--1,,1|(173,311)|
+11,8,0,242,311,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,9,Signal new downloads rate,242,340,96,21,40,131,0,0,-1,0,0,0,0,0,0,0,0,0
+12,10,48,563,324,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,12,14,2,4,0,0,22,0,0,0,-1--1--1,,1|(773,322)|
+1,13,14,10,100,0,0,22,0,0,0,-1--1--1,,1|(632,322)|
+11,14,0,697,322,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,15,WhatsApp new downloads rate,697,350,108,20,40,131,0,0,-1,0,0,0,0,0,0,0,0,0
+12,16,48,1104,336,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,18,20,3,4,0,0,22,0,0,0,-1--1--1,,1|(1364,333)|
+1,19,20,16,100,0,0,22,0,0,0,-1--1--1,,1|(1190,333)|
+11,20,0,1273,333,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,21,Facebook Messenger new downloads rate,1273,363,138,22,40,131,0,0,-1,0,0,0,0,0,0,0,0,0
+10,23,Signal active users,397,163,73,15,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,24,WhatsApp active users,892,169,89,18,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+10,25,Facebook Messenger active users,1578,190,119,24,8,131,0,0,0,0,0,0,0,0,0,0,0,0
+1,26,1,23,1,0,0,0,0,64,0,-1--1--1,,1|(504,211)|
+1,27,2,24,1,0,0,0,0,64,0,-1--1--1,,1|(985,223)|
+1,28,3,25,1,0,0,0,0,64,0,-1--1--1,,1|(1618,263)|
+///---\\\
+:L<%^E!@
+1:Base.vdfx
+9:Base
+23:0
+15:0,0,0,0,0,0
+19:100,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+4:Time
+5:Facebook Messenger active users
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+76:0
+77:0
+78:0
+79:0
+80:0
+81:0
+24:0
+25:120
+26:120
+75:
+43:
