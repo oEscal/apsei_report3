@@ -1,7 +1,7 @@
 {UTF-8}
 Facebook Messenger active users=
 	0.28*Facebook Messenger Downloads
-	~	
+	~	people
 	~		|
 
 Facebook Messenger Downloads= INTEG (
@@ -15,9 +15,14 @@ Facebook Messenger new downloads rate=
 	~	people/Month
 	~		|
 
+random investment=A FUNCTION OF(random investment) ~~|
+random investment=
+	~	
+	~		|
+
 Signal active users=
 	0.28*Signal Downloads
-	~	
+	~	people
 	~		|
 
 Signal Downloads= INTEG (
@@ -33,7 +38,7 @@ Signal new downloads rate=
 
 WhatsApp active users=
 	0.28*WhatsApp Downloads
-	~	
+	~	people
 	~		|
 
 WhatsApp Downloads= INTEG (
@@ -102,10 +107,12 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,1
 1,26,1,23,1,0,0,0,0,64,0,-1--1--1,,1|(504,211)|
 1,27,2,24,1,0,0,0,0,64,0,-1--1--1,,1|(985,223)|
 1,28,3,25,1,0,0,0,0,64,0,-1--1--1,,1|(1618,263)|
+10,30,random investment,125,89,76,20,8,131,0,0,0,0,0,0,0,0,0,0,0,0
 ///---\\\
 :L<%^E!@
+1:Simple number of users.vdfx
 1:Base.vdfx
-9:Base
+9:Simple number of users
 23:0
 15:0,0,0,0,0,0
 19:100,0
